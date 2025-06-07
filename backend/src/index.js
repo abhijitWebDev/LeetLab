@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(cookiePasser());
 app.use(
   cors({
-    origin:["http://localhost:5173","leetlab-production-5d58.up.railway.app"],
+    origin:["http://localhost:5173","https://leetlab-production-5d58.up.railway.app"],
     credentials: true,
   })
 );
