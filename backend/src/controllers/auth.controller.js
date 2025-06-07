@@ -78,7 +78,7 @@ export const login = async (req, res) => {
     });
     if (!user) {
       return res.status(400).json({
-        error: "User does not exist", // Fixed typo
+        error: "User Not Found", // Fixed typo
       });
     }
     const isMatched = await bcrypt.compare(password, user.password);
